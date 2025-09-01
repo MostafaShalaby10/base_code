@@ -7,8 +7,11 @@ import 'core/manager/theme_manager/theme_cubit.dart';
 import 'core/services/service_locator.dart';
 import 'core/services/shared_prefrences.dart';
 import 'core/utils/providers.dart';
-import 'features/splash/presention/page/splash_page.dart';
+import 'features/auth/signup/presention/pages/signup_page.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'features/delivery/presention/pages/delivery_page.dart';
+import 'features/otp/presention/pages/otp_page.dart';
+import 'features/splash/presention/page/splash_page.dart';
 import 'l10n/app_localizations.dart'; // Add this import if not present
 
 void main(List<String> args) async {
@@ -25,7 +28,7 @@ class MyApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: Providers.providers,
       child: ScreenUtilInit(
-        designSize: const Size(360, 690),
+        designSize: const Size(375, 812),
         minTextAdapt: true,
         splitScreenMode: true,
         builder: (_, child) {
@@ -50,7 +53,7 @@ class MyApp extends StatelessWidget {
                     locale: Locale(lang),
                     themeMode: themeMode,
                     theme: AppTheme.lightTheme,
-                    darkTheme: AppTheme.darkTheme ,
+                    darkTheme: AppTheme.darkTheme,
                     home: const SplashPage(),
                   );
                 },

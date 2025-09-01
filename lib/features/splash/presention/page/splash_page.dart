@@ -1,3 +1,5 @@
+import 'package:base_code/core/utils/app_assets.dart';
+import 'package:base_code/features/auth/register_page.dart';
 import 'package:flutter/material.dart';
 
 class SplashPage extends StatefulWidget {
@@ -9,7 +11,23 @@ class SplashPage extends StatefulWidget {
 
 class _SplashPageState extends State<SplashPage> {
   @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    Future.delayed(const Duration(seconds: 2), () {
+      Navigator.pushAndRemoveUntil(
+        context,
+        MaterialPageRoute(builder: (context) => RegisterPage()),
+        (route) => false,
+      );
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Container(
+      color: Colors.white,
+      child: Image.asset(AppAssets().logoPhoto),
+    );
   }
 }
