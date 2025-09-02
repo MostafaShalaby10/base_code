@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../utils/app_assets.dart';
-import '../utils/app_colors.dart';
-import 'custom_button_widget.dart';
-import 'custom_text_widget.dart';
+import '../../../../core/utils/app_assets.dart';
+import '../../../../core/utils/app_colors.dart';
+import '../../../../core/widgets/custom_button_widget.dart';
+import '../../../../core/widgets/custom_text_widget.dart';
 
 showOtpSheet(context) {
   showModalBottomSheet(

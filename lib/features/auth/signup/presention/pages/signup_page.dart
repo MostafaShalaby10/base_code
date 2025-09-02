@@ -6,7 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../core/utils/app_colors.dart';
 import '../../../../../core/widgets/custom_app_bar.dart';
 import '../../../../../core/widgets/custom_button_widget.dart';
-import '../../../../../core/widgets/otp_bottom_sheet_widget.dart';
+import '../../../../otp/presention/pages/otp_bottom_sheet_widget.dart';
 
 class SignupPage extends StatelessWidget {
   const SignupPage({super.key});

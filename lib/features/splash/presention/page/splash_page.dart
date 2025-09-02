@@ -1,5 +1,6 @@
 import 'package:base_code/core/utils/app_assets.dart';
 import 'package:base_code/features/auth/register_page.dart';
+import 'package:base_code/features/language/presention/pages/language_bottom_sheet.dart';
 import 'package:flutter/material.dart';
 
 class SplashPage extends StatefulWidget {
@@ -15,11 +16,12 @@ class _SplashPageState extends State<SplashPage> {
     // TODO: implement initState
     super.initState();
     Future.delayed(const Duration(seconds: 2), () {
-      Navigator.pushAndRemoveUntil(
-        context,
-        MaterialPageRoute(builder: (context) => RegisterPage()),
-        (route) => false,
-      );
+      // Navigator.pushAndRemoveUntil(
+      //   context,
+      //   MaterialPageRoute(builder: (context) => RegisterPage()),
+      //   (route) => false,
+      // );
+      showLanguageBottomSheet(context);
     });
   }
 
